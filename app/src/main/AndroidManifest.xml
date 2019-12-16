@@ -5,10 +5,20 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+<<<<<<< HEAD
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+=======
+        android:label="ScanBookFH"
+        android:layout_gravity="center_horizontal"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+
+>>>>>>> master-holder
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +26,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+=======
+
+>>>>>>> master-holder
     </application>
 
 </manifest>
