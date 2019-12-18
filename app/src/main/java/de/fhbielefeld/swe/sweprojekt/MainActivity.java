@@ -5,18 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.widget.TimePicker;
-<<<<<<< HEAD
 
-public class MainActivity extends AppCompatActivity {
-    TimePicker Picker;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Picker = findViewById(R.id.time_picker);
-        Picker.setIs24HourView(true);
-    }
-=======
 import android.widget.Button;
 import android.view.View;
 import android.widget.EditText;
@@ -28,7 +17,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     TimePicker Picker;
     Button Button;
-    Raum[] RaumListe = new Raum[10];
+    Raum[] RaumListe = new Raum[10]; // 10 Speicherpunkte [Array]
     EditText RaumEingabe;
     int AnzahlRaum = 0;
     int RaumIndex = 0;
@@ -36,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
 
 
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate(Bundle savedInstanceState) {    //In dem R Objekt liegen IDs für jedes User Interface Element,
+        super.onCreate(savedInstanceState);                 //welche man per XML angelegt hat.
         setContentView(R.layout.activity_main);
         Button = findViewById(R.id.button);
         Picker = findViewById(R.id.time_picker);
@@ -45,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         RaumEingabe = findViewById(R.id.editText);
 
 
-        RaumListe[AnzahlRaum] = new Raum(AnzahlRaum++);
+        RaumListe[AnzahlRaum] = new Raum(AnzahlRaum++);     //Ein Raum wird erstellt und an die erste Stelle vom Array gelegt.
 
         Button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -57,9 +46,9 @@ public class MainActivity extends AppCompatActivity {
                     int StartzeitStunde = Picker.getHour();
                     int StartzeitMinute = Picker.getMinute();
 
-                    RaumListe[RaumIndex].Buchen(StartzeitStunde, StartzeitMinute);
+                    RaumListe[RaumIndex].Buchen(StartzeitStunde, StartzeitMinute);  //Zeit und Raum werden gespeichert
 
-                    int AnzahlBuchungen = RaumListe[RaumIndex].AnzahlBuchungen;
+                    int AnzahlBuchungen = RaumListe[RaumIndex].AnzahlBuchungen;     //Testcode
 
                     Buchung TestBuchung = RaumListe[RaumIndex].getBuchung(AnzahlBuchungen-1);
 
@@ -69,5 +58,5 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
->>>>>>> master-holder
+
 }
