@@ -23,8 +23,7 @@ public class Buchung {
         NutzerID = 0;
     }
 
-<<<<<<< HEAD
-=======
+
     public Buchung(int startzeitStunde, int startzeitMinute) {
         StartzeitStunde = startzeitStunde;
         StartzeitMinute = startzeitMinute;
@@ -33,7 +32,7 @@ public class Buchung {
         NutzerID = 0;
     }
 
->>>>>>> master-holder
+
     public Buchung(int startzeitStunde, int startzeitMinute, int endzeitStunde, int endzeitMinute, int nutzerID) {
         StartzeitStunde = startzeitStunde;
         StartzeitMinute = startzeitMinute;
