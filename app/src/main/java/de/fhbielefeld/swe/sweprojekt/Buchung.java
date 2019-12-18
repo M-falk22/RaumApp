@@ -24,7 +24,7 @@ public class Buchung {
     }
 
 
-    public Buchung(int startzeitStunde, int startzeitMinute) {
+    public Buchung(int startzeitStunde, int startzeitMinute) {      //Testcode
         StartzeitStunde = startzeitStunde;
         StartzeitMinute = startzeitMinute;
         EndzeitStunde = StartzeitStunde+1;
