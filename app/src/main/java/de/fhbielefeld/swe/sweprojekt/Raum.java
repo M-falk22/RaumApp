@@ -2,9 +2,7 @@ package de.fhbielefeld.swe.sweprojekt;
 
 public class Raum {
     int Nummer;
-<<<<<<< HEAD
-    Buchung[] Buchungen;
-=======
+
     int AnzahlBuchungen;
     Buchung[] Buchungen = new Buchung[10];
 
@@ -26,7 +24,7 @@ public class Raum {
         AnzahlBuchungen++;
     }
 
-    public Buchung getBuchung(int pIndex)
+    public Buchung getBuchung(int pIndex)       //Testcode
     {
         if(pIndex < AnzahlBuchungen)
         {
@@ -37,6 +35,6 @@ public class Raum {
 
         return null;
     }
->>>>>>> master-holder
+
 }
 
