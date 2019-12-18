@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         Button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                RaumIndex = Integer.parseInt(RaumEingabe.getText().toString());
+                RaumIndex = Integer.parseInt(RaumEingabe.getText().toString()); //Erstmal nur Zahlen
 
                 if(RaumIndex < AnzahlRaum)
                 {
