@@ -7,7 +7,7 @@ public class Buchung {
     int EndzeitMinute;
     int NutzerID;
 
-    public Buchung() {
+    public Buchung() {                              //getter und setter automatisch
         StartzeitStunde = 0;
         StartzeitMinute = 0;
         EndzeitStunde = 0;
