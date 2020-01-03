@@ -1,9 +1,6 @@
-package de.fhbielefeld.swe.sweprojekt;
-
+﻿package de.fhbielefeld.swe.sweprojekt;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-
 import android.widget.TimePicker;
 
 import android.widget.Button;
@@ -22,12 +19,14 @@ public class MainActivity extends AppCompatActivity {
     int AnzahlRaum = 0;
     int RaumIndex = 0;
 
+
     @Override
 
 
     protected void onCreate(Bundle savedInstanceState) {    //In dem R Objekt liegen IDs für jedes User Interface Element,
         super.onCreate(savedInstanceState);                 //welche man per XML angelegt hat.
         setContentView(R.layout.activity_main);
+
         Button = findViewById(R.id.button);
         Picker = findViewById(R.id.time_picker);
         Picker.setIs24HourView(true);
@@ -59,4 +58,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+
 }
+

@@ -4,49 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Eau de Tayfun"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TimePicker
-        android:id="@+id/time_picker"
-        android:layout_width="match_parent"
-        android:layout_height="232dp"
-        android:timePickerMode="spinner" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="335dp"
-        android:layout_height="114dp"
-        android:layout_weight="1"
-        android:paddingTop="100dp"
-        android:text="Buchen"
-        app:layout_constraintBottom_toBottomOf="@+id/time_picker"
-        android:layout_below="@id/time_picker"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/editText"/>
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="116dp"
-        android:layout_below="@id/time_picker"
-        android:layout_alignParentLeft="true"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="phone" />
-=======
-    tools:context=".MainActivity"
-
-    >
 
 
     <TimePicker
@@ -62,6 +21,7 @@
         />
 
 
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -70,7 +30,7 @@
         android:layout_alignParentRight="true"
         android:layout_weight="1"
         android:text="Startzeit Festlegen"
-        android:textSize="10dp"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="@+id/time_picker"
         android:gravity="center"
         android:textColor="@android:color/white"
@@ -78,6 +38,7 @@
         android:windowSoftInputMode="adjustResize"
         android:background="@drawable/buttonclick"
         />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/username_text_input_layout"
@@ -89,8 +50,9 @@
         app:counterEnabled="true"
         app:counterMaxLength="4"
         android:maxLines="1"
-        android:lines="1"
-        android:maxLength="4">
+        android:lines="1">
+
+
 
 
 
@@ -111,9 +73,29 @@
             android:shadowDy="10"
             android:shadowRadius="10"
             android:shadowColor="@android:color/darker_gray"
-            android:backgroundTint="@android:color/holo_blue_light" />
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:maxLength="4"/>
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_text_input_layout"
+        android:layout_gravity="bottom"
+        android:text="ODER"
+        android:textSize="20dp"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@id/textView"
+        android:text="QR-Code Scannen"
+        android:background="@drawable/buttonclick"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"/>
 
 
     <ImageView
@@ -124,6 +106,7 @@
         android:layout_toEndOf="@id/time_picker"
         app:srcCompat="@drawable/fhbielefeldlogo" />
 
->>>>>>> master-holder
+
+
 
 </RelativeLayout>

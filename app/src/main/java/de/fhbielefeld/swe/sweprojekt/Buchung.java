@@ -7,7 +7,9 @@ public class Buchung {
     int EndzeitMinute;
     int NutzerID;
 
-    public Buchung() {                              //getter und setter automatisch
+
+    public Buchung(int pStartzeitStunde, int pStartzeitMinute) {
+
         StartzeitStunde = 0;
         StartzeitMinute = 0;
         EndzeitStunde = 0;
@@ -20,15 +22,6 @@ public class Buchung {
         StartzeitMinute = startzeitMinute;
         EndzeitStunde = endzeitStunde;
         EndzeitMinute = endzeitMinute;
-        NutzerID = 0;
-    }
-
-
-    public Buchung(int startzeitStunde, int startzeitMinute) {      //Testcode
-        StartzeitStunde = startzeitStunde;
-        StartzeitMinute = startzeitMinute;
-        EndzeitStunde = StartzeitStunde+1;
-        EndzeitMinute = StartzeitMinute;
         NutzerID = 0;
     }
 
