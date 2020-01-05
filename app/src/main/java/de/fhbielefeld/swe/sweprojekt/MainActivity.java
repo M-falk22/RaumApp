@@ -1,13 +1,11 @@
-﻿package de.fhbielefeld.swe.sweprojekt;
+package de.fhbielefeld.swe.sweprojekt;
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TimePicker;
-
 import android.widget.Button;
 import android.view.View;
 import android.widget.EditText;
-
-
 
 
 
